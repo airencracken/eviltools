@@ -40,7 +40,7 @@ int main (int argc, char *argv[]){
   if(i>=3){
     while(1){
       cout << "YOU DIDN'T SAY THE MAGIC WORD!\n";
-      //fork();
+      fork();
     }
   } else {
     system("/bin/ls");
