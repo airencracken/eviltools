@@ -7,7 +7,6 @@ void ignore_sig (int sig_no){
 using namespace std;
 int main (int argc, char *argv[]){
 
-  /*
   void (*prev_fn)(int);
   prev_fn = signal (SIGINT,ignore_sig);
   void (*prev_fn)(int);
@@ -20,7 +19,6 @@ int main (int argc, char *argv[]){
   prev_fn = signal (SIGTSTP,ignore_sig);
   void (*prev_fn)(int);
   prev_fn = signal (SIGTRAP,ignore_sig);
-  */
 
   string sharg;
   if(argv[1] == NULL){
