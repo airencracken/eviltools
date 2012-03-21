@@ -9,14 +9,13 @@ SRC = \
     passwd.cpp \
     ls.cpp 
 
+all: ls passwd
+
 passwd:
 	g++ passwd.cpp -o passwd
 
 ls: 
 	g++ ls.cpp -o ls
-
-all:
-	ls passwd
 
 clean:
 	rm ls passwd
