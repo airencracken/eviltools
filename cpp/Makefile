@@ -9,13 +9,14 @@ SRC = \
     passwd.cpp \
     ls.cpp 
 
-OBJS = $(SRC:.cpp=.o)
+passwd:
+	g++ passwd.cpp -o passwd
 
-passwd: $(OBJS)
-	$(LINKER) $(LFLAGS) $(OBJS) -o $@
+ls: 
+	g++ ls.cpp -o ls
 
-ls: $(OBJS)
-	$(LINKER) $(LFLAGS) $(OBJS) -o $@
+all:
+	ls passwd
 
 clean:
-	rm $(OBJS) ls passwd
+	rm ls passwd
