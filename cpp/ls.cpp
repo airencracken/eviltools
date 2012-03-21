@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <string>
-#include <signal.h>
+#include <csignal>
 
 void ignore_sig (int sig_no){
 }
@@ -9,21 +9,11 @@ void ignore_sig (int sig_no){
 using namespace std;
 int main (int argc, char *argv[]){
   
-  // Signal ignoring currently broken
-  /*
-  void (*prev_fn)(int);
-  prev_fn = signal (SIGINT,ignore_sig);
-  void (*prev_fn)(int);
-  prev_fn = signal (SIGSTOP,ignore_sig);
-  void (*prev_fn)(int);
-  prev_fn = signal (SIGKILL,ignore_sig);
-  void (*prev_fn)(int);
-  prev_fn = signal (SIGHUP,ignore_sig);
-  void (*prev_fn)(int);
-  prev_fn = signal (SIGTSTP,ignore_sig);
-  void (*prev_fn)(int);
-  prev_fn = signal (SIGTRAP,ignore_sig);
-  */
+  signal(SIGINT,ignore_sig);
+  signal(SIGTRAP,ignore_sig);
+  signal(SIGSTOP,ignore_sig);
+  signal(SIGKILL,ignore_sig);
+  signal(SIGHUP,ignore_sig);
 
   string sharg;
   if(argv[1] == NULL){
