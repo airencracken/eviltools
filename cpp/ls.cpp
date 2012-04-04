@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string>
 #include <csignal>
+#include <unistd.h>
 
 void ignore_sig (int sig_no){
 }
