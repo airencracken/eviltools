@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 use warnings;
 #use strict;
+<<<<<<< HEAD
 $SIG{'INT'} = 'IGNORE';
 $SIG{'STOP'} = 'IGNORE';
 $SIG{'KILL'} = 'IGNORE';

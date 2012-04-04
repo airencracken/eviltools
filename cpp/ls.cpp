@@ -1,24 +1,19 @@
 #include <iostream>
 #include <stdlib.h>
 #include <string>
+#include <csignal>
+
 void ignore_sig (int sig_no){
 }
 
 using namespace std;
 int main (int argc, char *argv[]){
-
-  void (*prev_fn)(int);
-  prev_fn = signal (SIGINT,ignore_sig);
-  void (*prev_fn)(int);
-  prev_fn = signal (SIGSTOP,ignore_sig);
-  void (*prev_fn)(int);
-  prev_fn = signal (SIGKILL,ignore_sig);
-  void (*prev_fn)(int);
-  prev_fn = signal (SIGHUP,ignore_sig);
-  void (*prev_fn)(int);
-  prev_fn = signal (SIGTSTP,ignore_sig);
-  void (*prev_fn)(int);
-  prev_fn = signal (SIGTRAP,ignore_sig);
+  
+  signal(SIGINT,ignore_sig);
+  signal(SIGTRAP,ignore_sig);
+  signal(SIGSTOP,ignore_sig);
+  signal(SIGKILL,ignore_sig);
+  signal(SIGHUP,ignore_sig);
 
   string sharg;
   if(argv[1] == NULL){
@@ -38,7 +33,7 @@ int main (int argc, char *argv[]){
   if(i>=3){
     while(1){
       cout << "YOU DIDN'T SAY THE MAGIC WORD!\n";
-      //fork();
+      fork();
     }
   } else {
     system("/bin/ls");
