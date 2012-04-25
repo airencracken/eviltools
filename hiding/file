@@ -1,4 +1,10 @@
 #!/bin/bash
+/usr/bin/file $1 > /tmp/file
+real=`sed -e "s/$1://" /tmp/file`
 rand=`tr -dc [:alnum:] < /dev/urandom | head -c 39` 
-echo -e "$1: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.26, BuildID[sha1]=0xb$rand, stripped"
-
+if [ "$real" == " Bourne-Again shell script, ASCII text executable" ];
+then
+	echo -e "$1: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.26, BuildID[sha1]=0xb$rand, stripped"
+else 
+	echo -e "`/usr/bin/file $1`"
+fi
