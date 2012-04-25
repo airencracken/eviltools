@@ -1,0 +1,1 @@
+These are a few scripts that should help you in creating a "funtime" computer for others. Both require files, it's easiest if you stick the file in the same directory you are executing the code from. Then you don't have to type a full path.
