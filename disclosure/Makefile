@@ -6,8 +6,7 @@ LINKER          = g++
 
 
 SRC = \
-    passwd.cpp \
-    ls.cpp 
+    passwd.cpp 
 
 all: ls passwd
 
