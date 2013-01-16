@@ -1,4 +1,4 @@
-#!/vin/bash
+#!/bin/bash
 ##In order for this script to work you should have a list of users into a list of users. Usernames must be 1 word seperated by spaces or newlines.
 echo "Path to list of usernames, seperated by spaces or newlines. Must be 1 word each. Can't have multi word usernames."
 read userpath

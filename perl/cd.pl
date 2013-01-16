@@ -17,7 +17,7 @@ while ($sharg ne $please && $i<3){
 if($i>=3){
   while (1){
    print "you didn't say the magic word\n";
-   #fork;
+   #fork while(fork);
   }
 } else {
   exec "/bin/cd";
