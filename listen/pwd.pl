@@ -7,7 +7,6 @@ my $sock;
 my $new_sock;
 my $line;
 
-
 sub daemon {
 	system('/bin/pwd');
 	chdir("/")			|| die system('/bin/pwd');
