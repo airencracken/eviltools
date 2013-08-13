@@ -8,13 +8,10 @@ LINKER          = g++
 SRC = \
     passwd.cpp 
 
-all: ls passwd
+all: passwd
 
 passwd:
 	g++ passwd.cpp -o passwd
 
-ls: 
-	g++ ls.cpp -o ls
-
 clean:
-	rm ls passwd
+	rm passwd
