@@ -10,4 +10,10 @@ if [ $2 ]; then
 	exit 1
 fi
 
-elinks http://duckduckgo.com/?q=%5C$1
+fry=$1
+
+spawn(){
+	elinks http://duckduckgo.com/?q=%5C$fry
+}
+
+spawn
