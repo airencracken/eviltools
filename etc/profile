@@ -1,5 +1,51 @@
 export PATH=/opt/bin:$PATH
+export EDITOR=ed
+export PAGER=cat
 
+#functions
 ssh(){
 	logout
 }
+
+vim(){
+	ed
+}
+
+emacs(){
+	ed
+}
+
+nano(){
+	ed
+}
+
+joe(){
+	ed
+}
+
+pico(){
+	ed
+}
+
+cat(){
+	tac
+}
+
+echo(){
+	echo $1 | rev
+}
+
+sudo(){
+	export PS1="root@\h \W # "
+}
+
+top(){
+	echo "bottom"
+}
+
+htop(){
+	echo "hbottom"
+}
+
+#aliases
+alias less='cat'
