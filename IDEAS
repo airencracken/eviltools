@@ -1,0 +1,10 @@
+[ ] - logrotate rotate logs every minute
+[ ] - wrong locale set
+[ ] - spawn fewer/more gettys
+[ ] - LD_PRELOAD and LD_LIBRARY_PATH
+[ ] - make passwd replacement actually change passwd
+[ ] - listening rsync daemon
+[ ] - listening git/svn daemon(s)
+[ ] - supply critical part of application over sshfs/fuse
+[ ] - corrupt package database
+[ ] - corrupt (lsb-release|debian_version|etc)
