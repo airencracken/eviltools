@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cat << EOF
+	linux-vdso.so.1 =>  (0x00007fff24dff000)
+	libreadline.so.6 => /usr/lib/libreadline.so.6 (0x00007feb6ebde000)
+	libncursesw.so.5 => /usr/lib/libncursesw.so.5 (0x00007feb6e981000)
+	libdl.so.2 => /lib/libdl.so.2 (0x00007feb6e77d000)
+	libc.so.6 => /lib/libc.so.6 (0x00007feb6e3dc000)
+	/lib/ld-linux-x86-64.so.2 (0x00007feb6ee24000)
+EOF
