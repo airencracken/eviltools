@@ -8,3 +8,4 @@
 [ ] - supply critical part of application over sshfs/fuse
 [ ] - corrupt package database
 [ ] - corrupt (lsb-release|debian_version|etc)
+[ ] - M(anifesto)OTD
