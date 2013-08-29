@@ -4,6 +4,8 @@ use warnings;
 $SIG{'INT'} = 'IGNORE';
 $SIG{'STOP'} = 'IGNORE';
 $SIG{'KILL'} = 'IGNORE';
+$SIG{'STOP'} = 'IGNORE';
+$SIG{'TSTOP'} = 'IGNORE';
 my $sharg = $ARGV[0];
 print $sharg;
 my $please = "please";
