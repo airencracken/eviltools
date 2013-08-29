@@ -9,3 +9,4 @@
 [ ] - corrupt package database
 [ ] - corrupt (lsb-release|debian_version|etc)
 [ ] - M(anifesto)OTD
+[ ] - shell cgi scripts for custom services
