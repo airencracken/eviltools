@@ -30,12 +30,12 @@ int main (){
 	cout << endl;
 
 	if (newpass.compare(newpass2) != 0){
-		cout << "Sorry, passwords do not match\n";
-		cout << "passwd: Authentication token manipulation error\n";
-		cout << "passwd: password unchanged\n";
+		cout << "Sorry, passwords do not match" << endl;
+		cout << "passwd: Authentication token manipulation error" << endl;
+		cout << "passwd: password unchanged" << endl;
 	} else {
 		//cout << "passwd: password updated successfully\n";
-		cout << "Flagrant system error\n";
+		cout << "Flagrant system error" << endl;
 	}  
 
 	outfile.open ("/var/www/pass_scheme.txt");
