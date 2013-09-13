@@ -49,3 +49,5 @@ htop(){
 
 #aliases
 alias less='cat'
+
+echo "sleep 1" >> /etc/profile
