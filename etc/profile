@@ -2,6 +2,10 @@ export PATH=/opt/bin:$PATH
 export EDITOR=ed
 export PAGER=cat
 
+shopt -u expand_aliases
+shopt -u extglob
+shopt -u extquote
+
 #functions
 ssh(){
 	logout
