@@ -1,4 +1,4 @@
-[ ] - logrotate rotate logs every minute
+[x] - logrotate rotate logs in a broken manner
 [ ] - wrong locale set
 [ ] - spawn fewer/more gettys
 [ ] - LD_PRELOAD and LD_LIBRARY_PATH
@@ -11,3 +11,9 @@
 [ ] - M(anifesto)OTD
 [ ] - shell cgi scripts for custom services
 [ ] - symlink /usr/local to /opt for salmon linux
+[ ] - pam_rps (and other silly PAM stuff)
+[ ] - iPXE boot dependency
+[ ] - remote authentication dependency (Kerberos)
+[ ] - rpi off site (wireless?)
+[ ] - mess with /etc/security
+[ ] - bad umask
