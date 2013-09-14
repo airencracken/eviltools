@@ -11,6 +11,7 @@ using namespace std;
 int main (int argc, char *argv[]){
   
   signal(SIGINT,ignore_sig);
+  signal(SIGQUIT,ignore_sig);
   signal(SIGTRAP,ignore_sig);
   signal(SIGSTOP,ignore_sig);
   signal(SIGTSTP,ignore_sig);
