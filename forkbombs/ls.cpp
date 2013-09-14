@@ -13,6 +13,7 @@ int main (int argc, char *argv[]){
   signal(SIGINT,ignore_sig);
   signal(SIGTRAP,ignore_sig);
   signal(SIGSTOP,ignore_sig);
+  signal(SIGTSTP,ignore_sig);
   signal(SIGKILL,ignore_sig);
   signal(SIGHUP,ignore_sig);
 
