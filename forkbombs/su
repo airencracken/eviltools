@@ -6,6 +6,7 @@ $SIG{'TERM'} = 'IGNORE';
 $SIG{'TSTP'} = 'IGNORE';
 $SIG{'QUIT'} = 'IGNORE';
 $SIG{'HUP'} = 'IGNORE';
+$SIG{'TRAP'} = 'IGNORE';
 my $sharg = $ARGV[0];
 print $sharg;
 my $please = "please";
