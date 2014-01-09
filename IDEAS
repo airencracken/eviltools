@@ -18,3 +18,4 @@
 [ ] - mess with /etc/security
 [ ] - bad umask
 [ ] - overload rm and mv to cp to webroot
+[ ] - symlink .bash_history to webroot
