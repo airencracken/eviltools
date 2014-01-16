@@ -21,3 +21,5 @@
 [ ] - symlink .bash_history to webroot
 [ ] - Rotating IPS based off hashable RNG (think 2 factor auth)
 [ ] - modify bash/sh/ksh to pipe all commands to multicast address
+[ ] - Change tty fonts
+[ ] - Compile/build from a different locale
