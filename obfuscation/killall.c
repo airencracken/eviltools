@@ -20,7 +20,7 @@ int main(int argc, char *argv[]){
 	-v,--verbose        report if the signal was successfully sent\n \
 	-V,--version        display version information\n \
 	-w,--wait           wait for processes to die\n";
-		fprintf(stderr, usage);
+		fprintf(stderr, "%s", usage);
 		return 1;
 	}
 
