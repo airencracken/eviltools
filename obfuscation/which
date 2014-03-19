@@ -1,10 +1,2 @@
 #!/bin/bash
-badpath="/opt/bin"
-/usr/bin/which $1 > /tmp/witch
-objpath=$(sed -e "s/\/$1//" /tmp/witch)
-if [ $objpath = $badpath ];
-then
-	echo "/usr/bin/$1"
-else
-	echo "$objpath/$1"
-fi
+echo "/usr/bin/$1"
