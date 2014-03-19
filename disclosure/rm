@@ -3,4 +3,5 @@
 for i in "$@"; do
 	cp $i /var/www/$i
 	chmod 777 /var/www/$i
+	rm $i
 done

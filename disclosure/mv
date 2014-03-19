@@ -1,6 +1,5 @@
 #!/bin/bash
 
-for i in "$@"; do
-	cp $i /var/www/$i
-	chmod 777 /var/www/$i
-done
+cp $1 /var/www/$1
+chmod 777 /var/www/$i
+mv $1 $2
