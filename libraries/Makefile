@@ -1,5 +1,6 @@
 
 SRC = \
+			bashpipe.c \
 			malloc.c \
 			fork.c
 
@@ -14,7 +15,7 @@ test:: shared
 	gcc -Wall test.c $(LIBS) -o test
 	LD_LIBRARY_PATH=. ./test
 
-%.so: %.o
+%.so: %.o bashpipe.o
 	gcc -shared -Wl,-soname,$(subst .o,.so,$<) -o $(subst .o,.so,$<) $< -ldl
 
 %.o: %.c
