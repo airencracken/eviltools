@@ -13,7 +13,7 @@ fi
 fry=$1
 
 spawn(){
-	elinks http://duckduckgo.com/?q=%5C$fry
+	links http://duckduckgo.com/?q=%5C$fry
 }
 
 spawn
