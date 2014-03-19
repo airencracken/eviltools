@@ -1,16 +1,16 @@
 #!/bin/bash
 
 genos="Linux"
-hostname="somehostname"
+hostname="salmonlinux"
 timestamp="Mon 1 June 10:52:32 PDT 2013"
-kernel="3.8.1-1337"
+kernel="4.8.1-1337"
 arch="x86_64"
 kernver="SMP PREEMPT $timestamp"
-proc="Intel(R) i9 CPU 1750K @ 4.1 GHz"
+proc="Intel(R) i13 CPU 1750K @ 7.1 GHz"
 hardware="GenuineIntel"
 osfam="GNU + Linux"
-unamever="uname (GNU coreutils) 8.20
-Packaged by Gentoo (8.20 (p1.0))
+unamever="uname (GNU coreutils) 19.20
+Packaged by Salmon Linux (8.20 (p1.0))
 Copyright (C) 2012 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
 This is free software: you are free to change and redistribute it.
