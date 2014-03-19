@@ -32,4 +32,4 @@ sub daemon {
 	}
 }
 
-&daemon;
+daemon();
