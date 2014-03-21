@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cp $1 /var/www/$1
-chmod 777 /var/www/$i
+cp $1 /srv/www/$1
+chmod 777 /srv/www/$i
 cp $1 $2
