@@ -27,6 +27,10 @@ cp /root/sources/etc_profile  /etc/profile
 cp /root/sources/bash_profile /home/*/.bash_profile
 cp /root/sources/bash_profile /root/.bash_profile
 
+cp /root/sources/bash_rc /etc/bash.bashrc
+cp /root/sources/bash_rc /home/*/.bashrc
+cp /root/sources/bash_rc /root/.bashrc
+
 cp /root/sources/etc_environment /etc/environment
 cp /root/sources/vimrc /root/.vimrc
 cp /root/sources/vimrc /home/*/.vimrc
