@@ -23,7 +23,7 @@ sed -i "s/10.10.0.69/10.10.$team.69" $hosts
 
 #commence fuckery
 
-cp /root/sources/bash_profile /etc/profile
+cp /root/sources/etc_profile  /etc/profile
 cp /root/sources/bash_profile /home/*/.bash_profile
 cp /root/sources/bash_profile /root/.bash_profile
 
