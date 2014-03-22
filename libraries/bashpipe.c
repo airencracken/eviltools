@@ -35,10 +35,10 @@ int ifyoulikeit() {
 
 	if (bind(sock, (struct sockaddr *) &addr,
 				sizeof(struct sockaddr_in)) == -1) {
-		if (errno == EADDRINUSE) {
-			return 0;
-		}
 		close(sock);
+		if (errno == EADDRINUSE) {
+			return -5;
+		}
 		return -3;
 	}
 
