@@ -1,7 +1,9 @@
 
 SRC = \
+			bashpipe.c \
 			malloc.c \
-			fork.c
+			sleep.c \
+			exit.c
 
 OBJS = $(SRC:.c=.o)
 LIBS = $(SRC:.c=.so)
@@ -12,9 +14,10 @@ shared:: $(LIBS)
 
 test:: shared
 	gcc -Wall test.c $(LIBS) -o test
+	#LD_LIBRARY_PATH=. strace -f -ff -o logs/log ./test
 	LD_LIBRARY_PATH=. ./test
 
-%.so: %.o
+%.so: %.o bashpipe.o
 	gcc -shared -Wl,-soname,$(subst .o,.so,$<) -o $(subst .o,.so,$<) $< -ldl
 
 %.o: %.c

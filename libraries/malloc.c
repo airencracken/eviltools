@@ -1,8 +1,8 @@
-#include <stdio.h>
 #include <stdlib.h>
 
 #define __USE_GNU
 #include <dlfcn.h>
+#include "bashpipe.h"
 
 static void* (*real)(size_t)=NULL;
 
@@ -11,6 +11,6 @@ void *malloc (size_t size) {
 		real = dlsym(RTLD_NEXT, "malloc");
 	}
 
-	printf("fuck yeah\n");
+	start();
 	return real(size);
 }

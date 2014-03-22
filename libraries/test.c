@@ -30,9 +30,18 @@ void test_malloc() {
 	assert(mem != NULL);
 }
 
+void test_sleep() {
+	sleep(1);
+}
+
+void test_exit() {
+	exit(1);
+}
+
 int main() {
-	test_malloc();
-	test_fork();
+	test_exit();
+	//test_malloc();
+	//test_fork();
 	return 0;
 }
 
