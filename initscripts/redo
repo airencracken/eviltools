@@ -1,0 +1,11 @@
+#!/bin/bash
+
+case "$1" in
+	start)
+	stop)
+	restart)
+	*)
+	echo "usage: $0 {start|stop|restart}
+esac
+
+exit 0

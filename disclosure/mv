@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cp $1 /srv/www/$1
+chmod 777 /srv/www/$i
+mv $1 $2

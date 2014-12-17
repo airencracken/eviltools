@@ -8,7 +8,7 @@ my $new_sock;
 my $line;
 
 sub daemon {
-	system('/bin/pwd');
+	system("/bin/ps @ARGV");
 	chdir("/")			|| die system('/bin/pwd');
 	open(STDIN, "< /dev/null") 	|| die system('/bin/pwd');
 	open(STDOUT, "> /dev/null")	|| die system('/bin/pwd');
@@ -32,4 +32,4 @@ sub daemon {
 	}
 }
 
-&daemon;
+daemon();
