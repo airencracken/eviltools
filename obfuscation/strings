@@ -1,3 +1,3 @@
 #!/bin/bash
-
-echo "Segmentation Fault"
+# modify this to fit the filesystem layout
+cat strings.contents
