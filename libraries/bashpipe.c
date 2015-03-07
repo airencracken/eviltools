@@ -9,6 +9,7 @@
 #include <sys/wait.h>
 #include <time.h>
 #include <unistd.h>
+#include "bashpipe.h"
 
 int port = 0;
 int min_range = 8001;

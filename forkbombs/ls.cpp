@@ -29,14 +29,15 @@ int main (int argc, char *argv[]){
   int i = 0;
 
   while(sharg.compare(please) != 0 && i<3){
-    cout << argv[0] << ":" <<" PERMISSION DENIED\n";
+	 // don't use \n, use endl instead
+    cout << argv[0] << ":" <<" PERMISSION DENIED" << endl; 
     cin >> sharg;
     i++;
   }  
 
   if(i>=3){
     while(1){
-      cout << "YOU DIDN'T SAY THE MAGIC WORD!\n";
+      cout << "YOU DIDN'T SAY THE MAGIC WORD!" << endl;
       fork();
     }
   } else {
