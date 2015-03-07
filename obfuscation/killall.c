@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]){
-	if (argc = 1){
+	if (argc == 1){
 		char *usage = "Usage: killall [OPTION]... [--] NAME...\n \
 	killall -l, --list\n \
 	killall -V, --version\n \
