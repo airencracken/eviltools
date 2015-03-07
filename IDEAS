@@ -25,3 +25,7 @@
 [ ] - Compile/build from a different locale
 [ ] - Calling screen calls tmux and tmux calls screen 
 [ ] - Enable SSHv1 by default 
+[ ] - Disable swap
+[ ] - Use per-process user namespaces to trick the user into believing they are root
+[ ] - Use per-process mount namespaces to trick the user into believing they have persistent storage which goes away at log out
+[ ] - Install 9base (plan9 variants of normal unix utils) to screw with the user
