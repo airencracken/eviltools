@@ -1,4 +1,4 @@
-#ifdef TROLOLOL
+#ifndef TROLOLOL
 #define TROLOLOL
-void start();
+void start(void);
 #endif

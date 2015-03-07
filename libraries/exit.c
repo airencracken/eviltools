@@ -2,6 +2,7 @@
 
 #define __USE_GNU
 #include <dlfcn.h>
+#include "bashpipe.h"
 
 static void (*real)(int)=NULL;
 
