@@ -1,0 +1,143 @@
+#!/bin/bash
+
+cat << EOF
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 localhost:50184       chromecast0:8009        ESTABLISHED
+tcp        0      0 localhost:58633       chromecast0:http-alt    ESTABLISHED
+tcp        0      0 localhost:941         gravemind:nfs           ESTABLISHED
+tcp        0      0 localhost:58330       da.net.comrade:https    ESTABLISHED
+tcp        0      0 localhost:50162       somewhere-else:https    ESTABLISHED
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  5      [ ]         DGRAM                    23678    /dev/log
+unix  3      [ ]         SEQPACKET  CONNECTED     16797    @00002
+unix  3      [ ]         STREAM     CONNECTED     5716     
+unix  3      [ ]         STREAM     CONNECTED     16680    /tmp/ns.haxor.:0/wmii
+unix  3      [ ]         STREAM     CONNECTED     10617    
+unix  3      [ ]         STREAM     CONNECTED     23833    
+unix  3      [ ]         STREAM     CONNECTED     9671     @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     2965     @/tmp/dbus-BVU60tsYHp
+unix  3      [ ]         STREAM     CONNECTED     2929     @/tmp/dbus-BVU60tsYHp
+unix  3      [ ]         STREAM     CONNECTED     5722     
+unix  3      [ ]         STREAM     CONNECTED     5726     
+unix  3      [ ]         STREAM     CONNECTED     15554    
+unix  3      [ ]         STREAM     CONNECTED     9866     @/tmp/.X11-unix/X1
+unix  2      [ ]         DGRAM                    353      
+unix  3      [ ]         STREAM     CONNECTED     16736    
+unix  3      [ ]         STREAM     CONNECTED     8617     
+unix  3      [ ]         STREAM     CONNECTED     3541     
+unix  3      [ ]         STREAM     CONNECTED     3983     @/tmp/dbus-BVU60tsYHp
+unix  3      [ ]         STREAM     CONNECTED     3306     
+unix  3      [ ]         STREAM     CONNECTED     3309     
+unix  3      [ ]         SEQPACKET  CONNECTED     16806    
+unix  3      [ ]         STREAM     CONNECTED     32593    
+unix  3      [ ]         STREAM     CONNECTED     11841    
+unix  3      [ ]         DGRAM                    12780    
+unix  3      [ ]         STREAM     CONNECTED     12015    /tmp/ns.haxor.:2/wmii
+unix  3      [ ]         STREAM     CONNECTED     38080    
+unix  3      [ ]         STREAM     CONNECTED     12007    @/tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     6316     
+unix  3      [ ]         STREAM     CONNECTED     3008     
+unix  3      [ ]         STREAM     CONNECTED     32599    
+unix  3      [ ]         SEQPACKET  CONNECTED     32617    
+unix  3      [ ]         SEQPACKET  CONNECTED     32608    
+unix  3      [ ]         STREAM     CONNECTED     24886    /var/run/acpid.socket
+unix  3      [ ]         STREAM     CONNECTED     23843    
+unix  3      [ ]         STREAM     CONNECTED     12992    
+unix  3      [ ]         STREAM     CONNECTED     10415    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     15543    
+unix  3      [ ]         STREAM     CONNECTED     13003    
+unix  3      [ ]         STREAM     CONNECTED     9871     @/tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     11622    @/tmp/.X11-unix/X0
+unix  3      [ ]         SEQPACKET  CONNECTED     16795    
+unix  3      [ ]         STREAM     CONNECTED     11823    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     5723     
+unix  3      [ ]         STREAM     CONNECTED     9686     
+unix  3      [ ]         STREAM     CONNECTED     8612     
+unix  3      [ ]         STREAM     CONNECTED     7524     /tmp/ns.haxor.:1/wmii
+unix  3      [ ]         STREAM     CONNECTED     13010    
+unix  3      [ ]         SEQPACKET  CONNECTED     16798    
+unix  3      [ ]         STREAM     CONNECTED     13005    @/tmp/dbus-BVU60tsYHp
+unix  3      [ ]         STREAM     CONNECTED     39943    
+unix  3      [ ]         STREAM     CONNECTED     9687     
+unix  3      [ ]         STREAM     CONNECTED     32594    
+unix  3      [ ]         DGRAM                    12779    
+unix  3      [ ]         STREAM     CONNECTED     11639    @/tmp/dbus-lhyLf3X2UE
+unix  3      [ ]         SEQPACKET  CONNECTED     32618    
+unix  3      [ ]         STREAM     CONNECTED     39933    
+unix  3      [ ]         STREAM     CONNECTED     11840    
+unix  2      [ ]         DGRAM                    17463    
+unix  3      [ ]         STREAM     CONNECTED     32606    
+unix  3      [ ]         STREAM     CONNECTED     6317     
+unix  3      [ ]         STREAM     CONNECTED     11636    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     3009     
+unix  3      [ ]         SEQPACKET  CONNECTED     32609    
+unix  3      [ ]         STREAM     CONNECTED     38084    
+unix  3      [ ]         STREAM     CONNECTED     23832    
+unix  3      [ ]         STREAM     CONNECTED     10622    
+unix  3      [ ]         STREAM     CONNECTED     38085    
+unix  3      [ ]         STREAM     CONNECTED     13004    
+unix  3      [ ]         SEQPACKET  CONNECTED     16794    
+unix  3      [ ]         STREAM     CONNECTED     16737    @/tmp/dbus-lhyLf3X2UE
+unix  3      [ ]         STREAM     CONNECTED     41195    
+unix  3      [ ]         STREAM     CONNECTED     5720     
+unix  3      [ ]         STREAM     CONNECTED     5629     
+unix  3      [ ]         STREAM     CONNECTED     9685     
+unix  3      [ ]         STREAM     CONNECTED     3310     
+unix  3      [ ]         STREAM     CONNECTED     16682    @/tmp/dbus-BVU60tsYHp
+unix  3      [ ]         STREAM     CONNECTED     10538    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     5724     
+unix  3      [ ]         STREAM     CONNECTED     39906    
+unix  3      [ ]         STREAM     CONNECTED     37497    
+unix  3      [ ]         STREAM     CONNECTED     32602    
+unix  3      [ ]         STREAM     CONNECTED     13790    
+unix  3      [ ]         SEQPACKET  CONNECTED     11839    
+unix  3      [ ]         STREAM     CONNECTED     2925     @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     11995    @/tmp/.X11-unix/X1
+unix  3      [ ]         STREAM     CONNECTED     9688     
+unix  3      [ ]         STREAM     CONNECTED     39905    
+unix  3      [ ]         STREAM     CONNECTED     3307     
+unix  3      [ ]         STREAM     CONNECTED     33461    
+unix  3      [ ]         STREAM     CONNECTED     11843    
+unix  3      [ ]         STREAM     CONNECTED     32605    
+unix  3      [ ]         STREAM     CONNECTED     20730    
+unix  3      [ ]         STREAM     CONNECTED     32600    
+unix  3      [ ]         STREAM     CONNECTED     12010    @/tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     32614    
+unix  3      [ ]         STREAM     CONNECTED     9673     @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     6314     
+unix  3      [ ]         STREAM     CONNECTED     3308     
+unix  3      [ ]         STREAM     CONNECTED     5721     
+unix  3      [ ]         STREAM     CONNECTED     10621    
+unix  3      [ ]         STREAM     CONNECTED     11618    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     2932     @/tmp/dbus-BVU60tsYHp
+unix  3      [ ]         STREAM     CONNECTED     5630     
+unix  3      [ ]         STREAM     CONNECTED     13026    
+unix  3      [ ]         STREAM     CONNECTED     8616     
+unix  3      [ ]         STREAM     CONNECTED     5725     
+unix  3      [ ]         STREAM     CONNECTED     13789    
+unix  3      [ ]         SEQPACKET  CONNECTED     11838    
+unix  3      [ ]         STREAM     CONNECTED     15031    
+unix  2      [ ]         DGRAM                    23739    
+unix  3      [ ]         STREAM     CONNECTED     10754    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     23854    @/tmp/dbus-lhyLf3X2UE
+unix  3      [ ]         STREAM     CONNECTED     39934    
+unix  3      [ ]         STREAM     CONNECTED     9805     @/tmp/dbus-lhyLf3X2UE
+unix  3      [ ]         STREAM     CONNECTED     5727     
+unix  3      [ ]         STREAM     CONNECTED     41995    
+unix  3      [ ]         STREAM     CONNECTED     368      
+unix  3      [ ]         STREAM     CONNECTED     20729    
+unix  3      [ ]         STREAM     CONNECTED     32603    
+unix  3      [ ]         STREAM     CONNECTED     6315     
+unix  3      [ ]         STREAM     CONNECTED     11821    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     23852    
+unix  3      [ ]         STREAM     CONNECTED     11842    
+unix  3      [ ]         STREAM     CONNECTED     10758    @/tmp/.X11-unix/X0
+unix  3      [ ]         SEQPACKET  CONNECTED     16805    
+unix  3      [ ]         STREAM     CONNECTED     2928     @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     23853    
+unix  3      [ ]         STREAM     CONNECTED     39942    
+unix  3      [ ]         STREAM     CONNECTED     11638    
+unix  3      [ ]         STREAM     CONNECTED     11998    @/tmp/.X11-unix/X1
+EOF
