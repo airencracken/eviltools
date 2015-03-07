@@ -23,3 +23,5 @@
 [ ] - modify bash/sh/ksh to pipe all commands to multicast address
 [ ] - Change tty fonts
 [ ] - Compile/build from a different locale
+[ ] - Calling screen calls tmux and tmux calls screen 
+[ ] - Enable SSHv1 by default 
